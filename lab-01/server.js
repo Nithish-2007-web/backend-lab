@@ -6,7 +6,7 @@ app.get('/', (request, response) => {
 
 app.get('/about', (request, response) => {
   response.send({
-    name: "Vemuri Jaswanth",
+    name: "T.Nithish Kumar",
     setion: "CSE CORE 2E"
   })
 });
