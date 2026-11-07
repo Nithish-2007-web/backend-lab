@@ -1,6 +1,6 @@
 # Lab 2: SQLite Database and CRUD Routes
 
-> **🔗 Live Deployment URL:** [https://backend-lab-lab-02.onrender.com](https://backend-lab-lab-02.onrender.com) *(or local server at `http://localhost:3000`)*
+> **🔗 Local Server URL:** [http://localhost:3000](http://localhost:3000)
 
 ---
 
@@ -8,13 +8,13 @@
 
 | Field | Details |
 |---|---|
-| **Student Name** | Vemuri Jaswanth |
-| **Registration Number** | 252U1R1256 |
+| **Student Name** | T.Nithish Kumar |
+| **Registration Number** | 252U1R1240 |
 | **Section** | CSE-CORE-2E |
 | **Course** | Backend Development Fundamentals |
 | **Faculty** | Mr Yugandhar Gurjalwar |
 | **Institution** | Aurora Deemed-to-be-University |
-| **GitHub Repository** | [https://github.com/JaswanthCodeHub/backend_lab](https://github.com/JaswanthCodeHub/backend_lab) |
+| **GitHub Repository** | [https://github.com/Nithish-2007-web/backend-lab.git](https://github.com/Nithish-2007-web/backend-lab.git) |
 | **Repository Path** | `lab-02/` in course GitHub repository |
 
 ---
@@ -170,11 +170,11 @@ All resource endpoints adhere to REST conventions: resources are identified as n
 
 | HTTP Method | Route Endpoint | Live URL | Description | Success Status | Error Status |
 |:---:|---|:---:|---|:---:|:---:|
-| `GET` | `/books/` | [Open Live Link](https://backend-lab-lab-02.onrender.com/books/) | Retrieve a list of all book records | `200 OK` | `500 Internal Error` |
-| `GET` | `/books/:bookId/` | [Open Live Link (ID 1)](https://backend-lab-lab-02.onrender.com/books/1/) | Retrieve a single book record by ID | `200 OK` | `404 Not Found` |
-| `POST` | `/books/` | [API Endpoint](https://backend-lab-lab-02.onrender.com/books/) | Create and insert a new book record | `201 Created` | `500 Internal Error` |
-| `PUT` | `/books/:bookId/` | [API Endpoint (ID 1)](https://backend-lab-lab-02.onrender.com/books/1/) | Update all attributes of an existing book record by ID | `200 OK` | `404 Not Found` |
-| `DELETE` | `/books/:bookId/` | [API Endpoint (ID 1)](https://backend-lab-lab-02.onrender.com/books/1/) | Remove an existing book record by ID | `200 OK` | `404 Not Found` |
+| `GET` | `/books/` | [Open Live Link](http://localhost:3000/books/) | Retrieve a list of all book records | `200 OK` | `500 Internal Error` |
+| `GET` | `/books/:bookId/` | [Open Live Link (ID 1)](http://localhost:3000/books/1/) | Retrieve a single book record by ID | `200 OK` | `404 Not Found` |
+| `POST` | `/books/` | [API Endpoint](http://localhost:3000/books/) | Create and insert a new book record | `201 Created` | `500 Internal Error` |
+| `PUT` | `/books/:bookId/` | [API Endpoint (ID 1)](http://localhost:3000/books/1/) | Update all attributes of an existing book record by ID | `200 OK` | `404 Not Found` |
+| `DELETE` | `/books/:bookId/` | [API Endpoint (ID 1)](http://localhost:3000/books/1/) | Remove an existing book record by ID | `200 OK` | `404 Not Found` |
 
 ---
 
@@ -344,14 +344,14 @@ Direct inspection of the `bookStore.db` database file and table records:
 ![Database Verification](screenshots/database.png)
 
 ### 2. GET All Books (`GET /books/`)
-- **Render Live URL:** [https://backend-lab-lab-02.onrender.com/books/](https://backend-lab-lab-02.onrender.com/books/)
+- **Local URL:** [http://localhost:3000/books/](http://localhost:3000/books/)
 - **Expected HTTP Status:** `200 OK`
 
 Retrieves the complete array of book records from the database with `200 OK`:
 ![GET All Books](screenshots/get-all-books.png)
 
 ### 3. GET Book by ID (`GET /books/:bookId/`)
-- **Render Live URL:** [https://backend-lab-lab-02.onrender.com/books/1/](https://backend-lab-lab-02.onrender.com/books/1/)
+- **Local URL:** [http://localhost:3000/books/1/](http://localhost:3000/books/1/)
 - **Expected HTTP Status:** `200 OK`
 
 Retrieves a single book object by primary key with `200 OK`:
@@ -374,36 +374,6 @@ Updates existing record fields and confirms success with `200 OK`:
 
 Deletes an existing record by ID and confirms removal with `200 OK`:
 ![DELETE Book](screenshots/delete-book.png)
-
----
-
-## 🚀 Deployment on Render
-
-### Steps to Deploy
-
-1. **Sign up** on [Render](https://render.com/) using your GitHub account.
-
-2. **Create a New Web Service:**
-   - Click **"New +"** → **"Web Service"**
-   - Connect your GitHub repository: `backend_lab`
-
-3. **Configure the Service:**
-
-   | Setting | Value |
-   |---------|-------|
-   | **Name** | `backend-lab-lab-02` |
-   | **Root Directory** | `lab-02` |
-   | **Runtime** | `Node` |
-   | **Build Command** | `npm install` |
-   | **Start Command** | `node server.js` |
-   | **Environment Variable** | `NODE_VERSION: 20.18.0` |
-
-4. **Deploy** and wait for the build to complete.
-
-5. **Verify by visiting the deployed Render URLs:**
-   - **GET All Books:** [https://backend-lab-lab-02.onrender.com/books/](https://backend-lab-lab-02.onrender.com/books/)
-   - **GET Single Book (ID 1):** [https://backend-lab-lab-02.onrender.com/books/1/](https://backend-lab-lab-02.onrender.com/books/1/)
-   - **GET 404 Error Test (ID 999):** [https://backend-lab-lab-02.onrender.com/books/999/](https://backend-lab-lab-02.onrender.com/books/999/)
 
 ---
 
@@ -452,8 +422,8 @@ Through **Lab 2**, I achieved the following learning outcomes:
 
 ## 👤 Author & Academic Attribution
 
-**Vemuri Jaswanth**<br>
-**Registration Number:** `252U1R1256`<br>
+**T.Nithish Kumar**<br>
+**Registration Number:** `252U1R1240`<br>
 **Section:** `CSE-CORE-2E`  
 **Department of Computer Science & Engineering**  
 **Aurora Deemed-to-be-University**
